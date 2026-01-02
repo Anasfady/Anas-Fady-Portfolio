@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="myscripts.js"></script>
+    <title>Portafolio de Anas Fady</title>
+  </head>
+  <body>
+    <nav>
+      <figure class="Logo">
+        <img src="Photos/image-removebg-preview.png" alt="Logo" />
+      </figure>
+      <ul class="navbar">
+        <li>Sobre mí</li>
+        <li>Lenguajes de programación</li>
+        <li>Portafolio</li>
+        <button id="letstalk">Hablemos</button>
+      </ul>
+      <br />
+      <div class="dropdown">
+        <button class="dropbtn">Idioma</button>
+        <div class="dropdown-content">
+          <a href="index.html" onclick="setLanguage('en')">English</a>
+          <a href="index-es.html" onclick="setLanguage('es')">Español</a>
+          <a href="index-ar.html" onclick="setLanguage('ar')"> Arabic</a>
+          <a href="index-de.html" onclick="setLanguage('de')">Deutsch</a>
+        </div>
+      </div>
+    </nav>
+
+    <section id="Home">
+      <div class="container">
+        <div class="text-content">
+          <h1 class="name">Anas Fady <br />Desarrollador de Software</h1>
+          <p class="intro">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias
+            in itaque dolore eum delectus exercitationem autem est, eius
+            blanditiis ut repellat dolores soluta sint minus maxime aut,
+            quisquam ab sapiente.
+          </p>
+        </div>
+
+        <div class="cover">
+          <img src="Photos/photo-cover.png" alt="Anas Fady" />
+        </div>
+      </div>
+    </section>
+    <section id="Programming">
+      <div class="containerlan">
+        <h2 class="textlan">Lenguajes de Programación</h2>
+        <div class="lanimg">
+          <figure>
+            <img src="Photos/HTML.png" alt="HTML" />
+            <img src="Photos/css.png" alt="CSS" />
+            <img src="Photos/javascript.png" alt="JavaScript" />
+            <img src="Photos/react.png" alt="React" />
+            <img src="Photos/Nodejs.png" alt="Node.js" />
+          </figure>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="myscripts.js"></script>
+    <title>Portfolio von Anas Fady</title>
+  </head>
+  <body>
+    <nav>
+      <figure class="Logo">
+        <img src="Photos/image-removebg-preview.png" alt="Logo" />
+      </figure>
+      <ul class="navbar">
+        <li>Über mich</li>
+        <li>Programmiersprachen</li>
+        <li>Portfolio</li>
+        <button id="letstalk">Kontakt</button>
+      </ul>
+      <br />
+      <div class="dropdown">
+        <button class="dropbtn">Sprache</button>
+        <div class="dropdown-content">
+          <a href="index.html" onclick="setLanguage('en')">English</a>
+          <a href="index-es.html" onclick="setLanguage('es')">Español</a>
+          <a href="index-ar.html" onclick="setLanguage('ar')"> Arabic</a>
+          <a href="index-de.html" onclick="setLanguage('de')">Deutsch</a>
+        </div>
+      </div>
+    </nav>
+
+    <section id="Home">
+      <div class="container">
+        <div class="text-content">
+          <h1 class="name">Anas Fady <br />Softwareentwickler</h1>
+          <p class="intro">
+            Dies ist ein Beispieltext. Hier kannst du später eine kurze
+            Vorstellung über dich, deine Fähigkeiten und deine Erfahrung im
+            Bereich Webentwicklung schreiben.
+          </p>
+        </div>
+
+        <div class="cover">
+          <img src="Photos/photo-cover.png" alt="Anas Fady" />
+        </div>
+      </div>
+    </section>
+    <section id="Programming">
+      <div class="containerlan">
+        <h2 class="textlan">Programmiersprachen</h2>
+        <div class="lanimg">
+          <figure>
+            <img src="Photos/HTML.png" alt="HTML" />
+            <img src="Photos/css.png" alt="CSS" />
+            <img src="Photos/javascript.png" alt="JavaScript" />
+            <img src="Photos/react.png" alt="React" />
+            <img src="Photos/Nodejs.png" alt="Node.js" />
+          </figure>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

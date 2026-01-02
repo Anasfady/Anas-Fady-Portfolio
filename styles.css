@@ -1,0 +1,270 @@
+
+body {
+    margin: 0;
+    padding: 0;
+}
+nav {
+    display: flex;
+    align-items: center;        
+    padding: 20px ;
+    margin: 0%;
+    border: 0cm;
+    background-color: white;
+}
+
+.Logo {
+    margin: 0;              
+    padding-right: 90px;      
+}
+
+.Logo img {
+    height: 130px;              
+    width: auto;
+}
+
+
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    gap: 160px;                
+    margin: 0;
+    padding: 0;
+    color: black;
+}
+
+#letstalk {
+    border-radius: 4px;
+    background-color: #C0392B;
+    padding: 5px 10px;
+    color: white;
+
+ transition:
+    background-color 0.3s ease-in-out,
+    transform 0.2s ease-in,
+    box-shadow 0.2s ease-in-out;
+}
+
+#letstalk:hover {
+  background-color: black;
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+.dropbtn {
+  background-color: #C0392B;
+  color: white;
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  gap: 30px;
+  border-radius: 7px;
+}
+
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+  margin-left: 20px;
+}
+
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 3px 7px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: black; 
+}
+
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+section {
+    margin: 0;
+    padding: 0;
+}
+
+@keyframes revealImage {
+    from {
+        opacity: 0;
+        transform: translateX(50px); 
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);    
+    }
+}
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);   
+    }
+}
+#Home {
+    background-color: black;
+    color: white;
+    min-height: 100vh;
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+    padding: 0 10%; 
+}
+
+.container {
+    display: flex;
+    width: 100%;
+    align-items: center; 
+    justify-content: space-between;
+}
+
+.text-content {
+    flex: 1; 
+    display: flex;
+    flex-direction: column; 
+    gap: 20px; 
+}
+.text {
+   display: flex;
+    width: 100%;
+    align-items: center; 
+    justify-content: space-between;
+
+}
+
+.name {
+    font-size: 3rem;
+    font-weight: bold;
+    margin: 0;
+    line-height: 1.2;
+    opacity: 0; 
+    animation: fadeUp 1s ease-out forwards;
+    animation-delay: 0.2s; 
+}
+
+.intro {
+   font-size: 1.3rem;
+   max-width: 500px; 
+   line-height: 1.6;
+   opacity: 0;
+   animation: fadeUp 1s ease-out forwards;
+   animation-delay: 0.5s; 
+
+    
+
+}
+.cover {
+  flex: 2;
+  display: flex;
+  justify-content: flex-end; 
+}
+
+.cover img{
+   max-width: 100%;
+   height: auto;
+   max-height: 80vh;
+   display: block;
+   opacity: 0; 
+   animation: revealImage 1.2s ease-out forwards;
+   animation-delay: 0.4s; 
+}
+
+
+#Programming {
+    margin: 0;
+    padding: 50px 0;
+    background-color: white; 
+    text-align: center;
+}
+
+@keyframes revealImage {
+    from {
+        opacity: 0;
+        transform: translateY(30px); /* Changed to Y for a 'pop up' effect */
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.contanierlan {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;    
+    gap: 40px;             
+    width: 100%;
+    padding: 60px 20px;
+}
+
+.lanimg {
+   max-width: 100%;
+   height: auto;
+   max-height: 80vh;
+   display: block;
+     flex: 1;
+  display: flex;
+  justify-content: flex-end; 
+}
+
+.textlan {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin: 0;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 50px; 
+}
+
+.lanimg figure {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center; 
+    align-items: center;     
+    gap: 90px; 
+    margin: 0 auto;          
+    width: 100%;
+
+}
+
+.lanimg img {
+    width: 120px;
+    height: 120px;
+    object-fit: contain;
+    
+    opacity: 0;
+    animation: revealImage 1s ease-out forwards;
+}
+
+.lanimg img:nth-child(1) { animation-delay: 0.2s; }
+.lanimg img:nth-child(2) { animation-delay: 0.4s; }
+.lanimg img:nth-child(3) { animation-delay: 0.6s; }
+.lanimg img:nth-child(4) { animation-delay: 0.8s; }
+.lanimg img:nth-child(5) { animation-delay: 1.0s; }
+
+
+
+
+
+
