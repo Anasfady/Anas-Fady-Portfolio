@@ -1,4 +1,13 @@
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -10,6 +19,7 @@ nav {
     margin: 0%;
     border: 0cm;
     background-color: white;
+    
 }
 
 .Logo {
@@ -31,6 +41,12 @@ nav {
     margin: 0;
     padding: 0;
     color: black;
+    
+}
+
+.navbar a {
+    text-decoration: none; 
+    color: inherit;        
 }
 
 #letstalk {
@@ -155,7 +171,7 @@ section {
 }
 
 .name {
-    font-size: 3rem;
+    font-size: 2rem;
     font-weight: bold;
     margin: 0;
     line-height: 1.2;
@@ -165,7 +181,7 @@ section {
 }
 
 .intro {
-   font-size: 1.3rem;
+   font-size: 1rem;
    max-width: 500px; 
    line-height: 1.6;
    opacity: 0;
@@ -209,11 +225,11 @@ section {
         transform: translateY(0);
     }
 }
-.contanierlan {
+.containerlan {
     display: flex;
     flex-direction: column; 
     align-items: center;    
-    gap: 40px;             
+    gap: 70px;             
     width: 100%;
     padding: 60px 20px;
 }
@@ -223,18 +239,22 @@ section {
    height: auto;
    max-height: 80vh;
    display: block;
-     flex: 1;
+   flex: 1;
   display: flex;
   justify-content: flex-end; 
 }
 
 .textlan {
-    font-size: 2.5rem;
+    font-size:17rem;
     font-weight: bold;
     margin: 0;
     width: 100%;
     text-align: center;
-    margin-bottom: 50px; 
+    margin-bottom: 10px; 
+}
+.text-content {
+    font-size: 50px;
+    margin-top: 2px;
 }
 
 .lanimg figure {
@@ -242,7 +262,7 @@ section {
     flex-wrap: wrap; 
     justify-content: center; 
     align-items: center;     
-    gap: 90px; 
+    gap: 70px; 
     margin: 0 auto;          
     width: 100%;
 
@@ -257,11 +277,195 @@ section {
     animation: revealImage 1s ease-out forwards;
 }
 
-.lanimg img:nth-child(1) { animation-delay: 0.2s; }
-.lanimg img:nth-child(2) { animation-delay: 0.4s; }
-.lanimg img:nth-child(3) { animation-delay: 0.6s; }
-.lanimg img:nth-child(4) { animation-delay: 0.8s; }
-.lanimg img:nth-child(5) { animation-delay: 1.0s; }
+#portfolio{
+    margin: 0;
+    padding: 40px 0;
+    background-color: black; 
+    text-align: center;
+    width: 100%;
+    overflow: hidden;
+}
+
+.containerpor {
+    display: flex;
+    flex-direction:column; 
+    align-items: center; 
+    width: 100%;   
+    gap: 40px;             
+    width: 100%;
+    padding: 0 20px;
+    margin: 0 auto; 
+}
+
+.portfoliohead{
+    color: white;
+    font-weight: bold;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1200px;
+    text-align: center;
+    margin-bottom: 10px; 
+    padding: 0 20px;
+    color: white;
+    font-size: 2rem;
+    margin-bottom: 20px;
+
+}
+
+.porimg {
+   
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.porimg figure{
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center; 
+    align-items: center;     
+    gap: 30px;
+    margin: 0;
+    width: 100%;
+}
+
+
+
+.portfolio-logos {
+  display: flex;
+  flex-direction: column;   
+  align-items: center;
+  gap: 50px;               
+  margin: 0;
+}
+
+.logo-card {
+    position: relative;
+    width: 45%; 
+    min-width: 350px; 
+    height: 350px; 
+    background-color: white;
+    border-radius: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.3s ease;
+    overflow: hidden; 
+    
+}
+.logo-card img {
+    width: 75%; 
+    height: auto;
+    object-fit: contain;
+    transition: opacity 0.4s ease;
+    background: transparent; 
+    padding: 0;
+}
+
+.logo-card:hover {
+    transform: translateY(-10px);
+}
+
+.card-text {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    opacity: 0; 
+    transition: opacity 0.4s ease;
+    text-align: center;
+    pointer-events: none; 
+    z-index: 2;
+}
+
+.card-text h3 {
+    margin-bottom: 10px;
+    color: #333;
+    font-size: 2rem;
+    
+}
+
+.card-text p {
+    color: #666;
+    font-size: 1.5rem;
+}
+
+.logo-card:hover img {
+    opacity: 0;
+}
+
+.logo-card:hover .card-text {
+    opacity: 1;
+    pointer-events: auto; 
+}
+
+footer {
+    background-color: white;
+    width: 100%;
+    padding: 0px 0;
+    
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;  
+    align-items: center;
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0px 20px;
+}
+
+.footerlogo img {
+    height: 200px; 
+    width: auto;
+    object-fit: contain;
+    margin-left: -50px;
+
+}
+
+
+.social-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+}
+
+.social-section h3 {
+    font-size: 1.1rem;
+    color: #333;
+    margin: 0;
+}
+
+
+.icons-row {
+    display: flex;
+    gap: 20px;
+    margin-right: 20px;
+}
+
+.icons-row img {
+    width: 40px; 
+    height: 40px;
+    object-fit: contain;
+    transition: transform 0.2s ease;
+}
+
+.icons-row img:hover {
+    transform: scale(1.1);
+}
+
+
+
+
+
 
 
 
