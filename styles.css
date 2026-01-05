@@ -218,7 +218,7 @@ section {
 @keyframes revealImage {
     from {
         opacity: 0;
-        transform: translateY(30px); /* Changed to Y for a 'pop up' effect */
+        transform: translateY(30px);
     }
     to {
         opacity: 1;
