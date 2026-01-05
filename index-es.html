@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<<!DOCTYPE html>
 <html lang="es">
   <head>
     <meta charset="UTF-8" />
@@ -13,9 +13,9 @@
         <img src="Photos/image-removebg-preview.png" alt="Logo" />
       </figure>
       <ul class="navbar">
-        <li>Sobre mí</li>
-        <li>Lenguajes de programación</li>
-        <li>Portafolio</li>
+        <li><a href="#Home">Inicio</a></li>
+        <li><a href="#Programming">Lenguajes de Programación</a></li>
+        <li><a href="#portfolio">Portafolio</a></li>
         <button
           id="letstalk"
           onclick="window.open('https://forms.gle/sQ9DQzk264Yvo2ko8', '_blank')"
@@ -27,23 +27,28 @@
       <div class="dropdown">
         <button class="dropbtn">Idioma</button>
         <div class="dropdown-content">
-          <a href="index.html" onclick="setLanguage('en')">English</a>
+          <a href="index.html" onclick="setLanguage('en')">Inglés</a>
           <a href="index-es.html" onclick="setLanguage('es')">Español</a>
-          <a href="index-ar.html" onclick="setLanguage('ar')"> Arabic</a>
-          <a href="index-de.html" onclick="setLanguage('de')">Deutsch</a>
+          <a href="index-ar.html" onclick="setLanguage('ar')">Árabe</a>
+          <a href="index-de.html" onclick="setLanguage('de')">Alemán</a>
         </div>
       </div>
     </nav>
-
     <section id="Home">
       <div class="container">
         <div class="text-content">
-          <h1 class="name">Anas Fady <br />Desarrollador de Software</h1>
+          <h2 class="name">
+            Anas Fady <br />Desarrollador de Software - Gerente de Producto
+          </h2>
           <p class="intro">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias
-            in itaque dolore eum delectus exercitationem autem est, eius
-            blanditiis ut repellat dolores soluta sint minus maxime aut,
-            quisquam ab sapiente.
+            7 años de experiencia en desarrollo de negocios, gestión de
+            productos y desarrollo front-end. Combinando habilidades técnicas y
+            estrategia empresarial para impulsar el crecimiento. Experiencia en
+            SaaS, fintech, edtech y servicios logísticos. Transformando ideas en
+            productos escalables que los usuarios adoran. Alineando el
+            desarrollo de productos con objetivos comerciales claros. Apasionado
+            por crear soluciones que mejoren la eficiencia y el impacto. Listo
+            para contribuir al crecimiento de startups innovadoras.
           </p>
         </div>
 
@@ -54,17 +59,79 @@
     </section>
     <section id="Programming">
       <div class="containerlan">
-        <h2 class="textlan">Lenguajes de Programación</h2>
+        <h2 class="text-content">Lenguajes de Programación</h2>
         <div class="lanimg">
           <figure>
             <img src="Photos/HTML.png" alt="HTML" />
             <img src="Photos/css.png" alt="CSS" />
-            <img src="Photos/javascript.png" alt="JavaScript" />
+            <img src="Photos/javascript.png" alt="Javascript" />
             <img src="Photos/react.png" alt="React" />
-            <img src="Photos/Nodejs.png" alt="Node.js" />
+            <img src="Photos/Nodejs.png" alt="Nodejs" />
           </figure>
         </div>
       </div>
     </section>
+    <section id="portfolio">
+      <div class="containerpor">
+        <h2 class="portfoliohead">Portafolio</h2>
+        <div class="porimg">
+          <figure>
+            <div class="logo-card">
+              <a
+                href="https://www.devospaces.com/"
+                target="_blank"
+                style="text-decoration: none; color: inherit"
+              >
+                <img src="Photos/Devospace.png" alt="DevoSpace" />
+                <div class="card-text">
+                  <h3>DevoSpace</h3>
+                  <p>
+                    Servicios de gestión de productos y desarrollo de negocios
+                  </p>
+                </div>
+              </a>
+            </div>
+
+            <div class="logo-card">
+              <a
+                href="https://marn.com/en/"
+                target="_blank"
+                style="text-decoration: none; color: inherit"
+              >
+                <img src="Photos/Marn.png" alt="Marn" />
+                <div class="card-text">
+                  <h3>Marn</h3>
+                  <p>
+                    Servicios de gestión de productos y desarrollo de negocios
+                  </p>
+                </div>
+              </a>
+            </div>
+          </figure>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="footer-container">
+        <div class="footerlogo">
+          <img src="Photos/image-removebg-preview.png" alt="Anas Fady Logo" />
+        </div>
+        <div class="social-section">
+          <h3>Conéctate conmigo a través de las redes sociales</h3>
+          <div class="icons-row">
+            <a href="https://github.com/Anasfady"
+              ><img
+                src="https://img.icons8.com/?size=100&id=xuvGCOXi8Wyg&format=png&color=000000"
+                alt="GitHub"
+            /></a>
+            <a href="https://www.linkedin.com/in/anas-fady-658414135/"
+              ><img
+                src="https://img.icons8.com/?size=100&id=FOEqu0B3Z17A&format=png&color=000000"
+                alt="LinkedIn"
+            /></a>
+          </div>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>

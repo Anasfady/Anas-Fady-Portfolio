@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles.css" />
     <script src="myscripts.js"></script>
-    <title>Portfolio von Anas Fady</title>
+    <title>Anas Fady Portfolio</title>
   </head>
   <body>
     <nav>
@@ -13,9 +13,9 @@
         <img src="Photos/image-removebg-preview.png" alt="Logo" />
       </figure>
       <ul class="navbar">
-        <li>Über mich</li>
-        <li>Programmiersprachen</li>
-        <li>Portfolio</li>
+        <li><a href="#Home">Startseite</a></li>
+        <li><a href="#Programming">Programmiersprachen</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
         <button
           id="letstalk"
           onclick="window.open('https://forms.gle/sQ9DQzk264Yvo2ko8', '_blank')"
@@ -27,22 +27,28 @@
       <div class="dropdown">
         <button class="dropbtn">Sprache</button>
         <div class="dropdown-content">
-          <a href="index.html" onclick="setLanguage('en')">English</a>
-          <a href="index-es.html" onclick="setLanguage('es')">Español</a>
-          <a href="index-ar.html" onclick="setLanguage('ar')"> Arabic</a>
+          <a href="index.html" onclick="setLanguage('en')">Englisch</a>
+          <a href="index-es.html" onclick="setLanguage('es')">Spanisch</a>
+          <a href="index-ar.html" onclick="setLanguage('ar')">Arabisch</a>
           <a href="index-de.html" onclick="setLanguage('de')">Deutsch</a>
         </div>
       </div>
     </nav>
-
     <section id="Home">
       <div class="container">
         <div class="text-content">
-          <h1 class="name">Anas Fady <br />Softwareentwickler</h1>
+          <h2 class="name">
+            Anas Fady <br />Softwareentwickler - Produktmanager
+          </h2>
           <p class="intro">
-            Dies ist ein Beispieltext. Hier kannst du später eine kurze
-            Vorstellung über dich, deine Fähigkeiten und deine Erfahrung im
-            Bereich Webentwicklung schreiben.
+            7 Jahre Erfahrung in der Geschäftsentwicklung, Produktmanagement und
+            Frontend-Entwicklung. Technische Fähigkeiten und Geschäftsstrategie
+            kombiniert, um Wachstum zu fördern. Erfahrung in SaaS, Fintech,
+            EdTech und Logistikdienstleistungen. Ideen in skalierbare Produkte
+            verwandeln, die Nutzer lieben. Produktentwicklung mit klaren
+            Geschäftszielen ausrichten. Leidenschaftlich darin, Lösungen zu
+            entwickeln, die Effizienz und Wirkung verbessern. Bereit, zum
+            Wachstum innovativer Startups beizutragen.
           </p>
         </div>
 
@@ -53,17 +59,75 @@
     </section>
     <section id="Programming">
       <div class="containerlan">
-        <h2 class="textlan">Programmiersprachen</h2>
+        <h2 class="text-content">Programmiersprachen</h2>
         <div class="lanimg">
           <figure>
             <img src="Photos/HTML.png" alt="HTML" />
             <img src="Photos/css.png" alt="CSS" />
-            <img src="Photos/javascript.png" alt="JavaScript" />
+            <img src="Photos/javascript.png" alt="Javascript" />
             <img src="Photos/react.png" alt="React" />
-            <img src="Photos/Nodejs.png" alt="Node.js" />
+            <img src="Photos/Nodejs.png" alt="Nodejs" />
           </figure>
         </div>
       </div>
     </section>
+    <section id="portfolio">
+      <div class="containerpor">
+        <h2 class="portfoliohead">Portfolio</h2>
+        <div class="porimg">
+          <figure>
+            <div class="logo-card">
+              <a
+                href="https://www.devospaces.com/"
+                target="_blank"
+                style="text-decoration: none; color: inherit"
+              >
+                <img src="Photos/Devospace.png" alt="DevoSpace" />
+                <div class="card-text">
+                  <h3>DevoSpace</h3>
+                  <p>Produktmanagement- und Geschäftsentwicklungsdienste</p>
+                </div>
+              </a>
+            </div>
+
+            <div class="logo-card">
+              <a
+                href="https://marn.com/en/"
+                target="_blank"
+                style="text-decoration: none; color: inherit"
+              >
+                <img src="Photos/Marn.png" alt="Marn" />
+                <div class="card-text">
+                  <h3>Marn</h3>
+                  <p>Produktmanagement- und Geschäftsentwicklungsdienste</p>
+                </div>
+              </a>
+            </div>
+          </figure>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="footer-container">
+        <div class="footerlogo">
+          <img src="Photos/image-removebg-preview.png" alt="Anas Fady Logo" />
+        </div>
+        <div class="social-section">
+          <h3>Verbinde dich mit mir über soziale Medien</h3>
+          <div class="icons-row">
+            <a href="https://github.com/Anasfady"
+              ><img
+                src="https://img.icons8.com/?size=100&id=xuvGCOXi8Wyg&format=png&color=000000"
+                alt="GitHub"
+            /></a>
+            <a href="https://www.linkedin.com/in/anas-fady-658414135/"
+              ><img
+                src="https://img.icons8.com/?size=100&id=FOEqu0B3Z17A&format=png&color=000000"
+                alt="LinkedIn"
+            /></a>
+          </div>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
