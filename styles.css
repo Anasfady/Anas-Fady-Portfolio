@@ -53,7 +53,7 @@ nav {
  
 @media (min-width: 800px){
     nav {
-        flex-direction: row;
+        flex-direction: column;
         --padding-in-menu: 12px;
     }
  
@@ -205,7 +205,7 @@ section {
  
 @media (min-width: 1000px) {
     .container {
-        flex-direction: column-reverse;
+        flex-direction: row;
         --padding-in-menu: 12px;
     }
     .cover {
