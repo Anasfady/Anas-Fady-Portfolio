@@ -554,3 +554,24 @@ footer {
 .icons-row img:hover {
     transform: scale(1.1);
 }
+
+@media (max-width: 800px) {
+
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+        gap: 30px;
+        padding: 20px;
+    }
+
+    .footerlogo img {
+        height: 120px;
+        margin-left: 0;
+    }
+
+    .icons-row {
+        margin-right: 0;
+        justify-content: center;
+    }
+
+}
