@@ -4,51 +4,57 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="myscripts.js"></script>
     <title>Anas Fady Portfolio</title>
   </head>
   <body>
     <nav>
       <figure class="Logo">
-        <img src="Photos/image-removebg-preview.png" alt="Logo" />
+        <img src="Photos/Anaslogo.png" alt="Logo" />
       </figure>
       <ul class="navbar">
-        <li><a href="#Home">Startseite</a></li>
-        <li><a href="#Programming">Programmiersprachen</a></li>
-        <li><a href="#portfolio">Portfolio</a></li>
+        <li class="navbar-li"><a href="#Home">Startseite</a></li>
+        <li class="navbar-li">
+          <a href="#Programming">Programmiersprachen</a>
+        </li>
+        <li class="navbar-li"><a href="#portfolio">Portfolio</a></li>
+      </ul>
+      <div class="navbar-button-group">
         <button
           id="letstalk"
           onclick="window.open('https://forms.gle/sQ9DQzk264Yvo2ko8', '_blank')"
         >
           Kontakt
         </button>
-      </ul>
-      <br />
-      <div class="dropdown">
-        <button class="dropbtn">Sprache</button>
-        <div class="dropdown-content">
-          <a href="index.html" onclick="setLanguage('en')">Englisch</a>
-          <a href="index-es.html" onclick="setLanguage('es')">Spanisch</a>
-          <a href="index-ar.html" onclick="setLanguage('ar')">Arabisch</a>
-          <a href="index-de.html" onclick="setLanguage('de')">Deutsch</a>
+        <div class="dropdown">
+          <button class="dropbtn">Sprache</button>
+          <div class="dropdown-content">
+            <a href="index.html" onclick="setLanguage('en')">Englisch</a>
+            <a href="index-es.html" onclick="setLanguage('es')">Spanisch</a>
+            <a href="index-ar.html" onclick="setLanguage('ar')">Arabisch</a>
+            <a href="index-de.html" onclick="setLanguage('de')">Deutsch</a>
+          </div>
         </div>
       </div>
     </nav>
+
     <section id="Home">
       <div class="container">
         <div class="text-content">
           <h2 class="name">
-            Anas Fady <br />Softwareentwickler - Produktmanager
+            Anas Fady <br />Softwareentwickler – Produktmanager
           </h2>
           <p class="intro">
-            7 Jahre Erfahrung in der Geschäftsentwicklung, Produktmanagement und
-            Frontend-Entwicklung. Technische Fähigkeiten und Geschäftsstrategie
-            kombiniert, um Wachstum zu fördern. Erfahrung in SaaS, Fintech,
-            EdTech und Logistikdienstleistungen. Ideen in skalierbare Produkte
-            verwandeln, die Nutzer lieben. Produktentwicklung mit klaren
-            Geschäftszielen ausrichten. Leidenschaftlich darin, Lösungen zu
-            entwickeln, die Effizienz und Wirkung verbessern. Bereit, zum
-            Wachstum innovativer Startups beizutragen.
+            7 Jahre Erfahrung in der Geschäftsentwicklung, im Produktmanagement
+            und in der Frontend-Entwicklung. Kombination aus technischen
+            Fähigkeiten und Geschäftsstrategie zur Förderung von Wachstum.
+            Erfahrung in SaaS, Fintech, EdTech und Logistikdienstleistungen.
+            Umsetzung von Ideen in skalierbare Produkte, die Nutzer lieben.
+            Ausrichtung der Produktentwicklung an klaren Geschäftszielen.
+            Leidenschaft für die Entwicklung von Lösungen zur Steigerung von
+            Effizienz und Wirkung. Bereit, zum Wachstum innovativer Start-ups
+            beizutragen.
           </p>
         </div>
 
@@ -57,20 +63,22 @@
         </div>
       </div>
     </section>
+
     <section id="Programming">
       <div class="containerlan">
         <h2 class="text-content">Programmiersprachen</h2>
         <div class="lanimg">
           <figure>
             <img src="Photos/HTML.png" alt="HTML" />
-            <img src="Photos/css.png" alt="CSS" />
-            <img src="Photos/javascript.png" alt="Javascript" />
+            <img src="Photos/css last.png" alt="CSS" />
+            <img src="Photos/javascript.png" alt="JavaScript" />
             <img src="Photos/react.png" alt="React" />
-            <img src="Photos/Nodejs.png" alt="Nodejs" />
+            <img src="Photos/Nodejs.png" alt="Node.js" />
           </figure>
         </div>
       </div>
     </section>
+
     <section id="portfolio">
       <div class="containerpor">
         <h2 class="portfoliohead">Portfolio</h2>
@@ -97,16 +105,17 @@
                 style="text-decoration: none; color: inherit"
               >
                 <img src="Photos/Marn.png" alt="Marn" />
-                <div class="card-text">
-                  <h3>Marn</h3>
-                  <p>Produktmanagement- und Geschäftsentwicklungsdienste</p>
-                </div>
               </a>
+              <div class="card-text">
+                <h3>Marn</h3>
+                <p>Produktmanagement- und Geschäftsentwicklungsdienste</p>
+              </div>
             </div>
           </figure>
         </div>
       </div>
     </section>
+
     <footer>
       <div class="footer-container">
         <div class="footerlogo">
@@ -115,16 +124,18 @@
         <div class="social-section">
           <h3>Verbinde dich mit mir über soziale Medien</h3>
           <div class="icons-row">
-            <a href="https://github.com/Anasfady"
-              ><img
+            <a href="https://github.com/Anasfady">
+              <img
                 src="https://img.icons8.com/?size=100&id=xuvGCOXi8Wyg&format=png&color=000000"
                 alt="GitHub"
-            /></a>
-            <a href="https://www.linkedin.com/in/anas-fady-658414135/"
-              ><img
+              />
+            </a>
+            <a href="https://www.linkedin.com/in/anas-fady-658414135/">
+              <img
                 src="https://img.icons8.com/?size=100&id=FOEqu0B3Z17A&format=png&color=000000"
                 alt="LinkedIn"
-            /></a>
+              />
+            </a>
           </div>
         </div>
       </div>
