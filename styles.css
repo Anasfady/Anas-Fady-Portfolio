@@ -316,8 +316,7 @@ section {
    max-width: 100%;
    height: auto;
    max-height: 80vh;
-   display: block;
-   flex: 1;
+    flex: 1;
   display: flex;
   justify-content: flex-end; 
 }
@@ -357,6 +356,16 @@ section {
 
 .lanimg img:nth-child(2) {
   width: 240px;
+}
+
+@media (min-width: 800px){
+    .lanimg {
+        max-width: 100%;
+        flex-direction: column;
+        flex-wrap: wrap;
+         --padding-in-menu: 2px;
+        gap: 30px;
+    }
 }
  
 #portfolio{
